@@ -13,9 +13,15 @@ disp(primeNumbers)
 
 %Specialized Matrix Functions
 IM = eye(3,3);
-magicSquare = magicsquare(2);
+magicSquare = magicsquare(3);
 disp(IM)
 disp(magicSquare)
+
+%Matrix Concatenation:
+combinedVector = horzcat(evenNumbers,primeNumbers');
+disp(combinedVector)
+combinedMatrix = vertcat(IM,magicSquare);
+disp(combinedMatrix)
 
 
 
